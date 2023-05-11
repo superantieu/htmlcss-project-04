@@ -494,3 +494,106 @@ button {
     opacity: 1;
     height: 1.5px;
 }
+/* Service */
+.service {
+    margin-top: 190px;
+    padding: 68px 0 100px;
+    background: #fff6ed;
+}
+.service__top {
+    text-align: center;
+}
+.service__desc {
+    margin-bottom: 15px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+.service__body {
+    margin-top: 71px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 70px;
+}
+.service-item {
+    width: 294px;
+    padding: 30px 22px 30px 28px;
+    background: #ffffff;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+.service-item__heading {
+    position: relative;
+    padding-left: 12px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+.service-item__heading::before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    content: "";
+    display: inline-block;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(#ff5b2e, #ffa187);
+}
+.service-item__desc {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+.service-item__more {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 24px;
+    font-family: "Sora", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #34396a;
+}
+.service-item__more::after {
+    content: url(../icon/arrow-up-right.svg);
+    margin-left: 6px;
+    margin-top: 2px;
+}
+.service__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+.service__media::after {
+    content: "";
+    position: absolute;
+    height: 350px;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    border-radius: 10px;
+}
+.service__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+.service__cta-wrap {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: currentColor;
+}
